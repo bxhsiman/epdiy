@@ -71,3 +71,12 @@ const EpdDisplay_t ED078KC1 = {
     .default_waveform = &epdiy_ED047TC2,
     .display_type = DISPLAY_TYPE_GENERIC,
 };
+
+const EpdDisplay_t EC080SC2 = {
+    .width = 1800,              // 实际显示大小为600 【注意搭配epdiy_rgb】使用 后期这里改为600
+    .height = 800,
+    .bus_width = 16,
+    .bus_speed = 11,
+    .default_waveform = &epdiy_ED047TC2, // 无EC080SC2波形 实测ED047TC2波形可用
+    .display_type = DISPLAY_TYPE_GENERIC,
+};
