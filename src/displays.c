@@ -81,3 +81,12 @@ const EpdDisplay_t ED052TC4 = {
     .default_waveform = &epdiy_ED097TC2,
     .display_type = DISPLAY_TYPE_ED097TC2,
 };
+// EC080SC2 is a color display with 1800x800 gray resolution and 600*800 color resolution
+const EpdDisplay_t EC080SC2 = {
+    .width = 1800,
+    .height = 800,
+    .bus_width = 16,
+    .bus_speed = 11,
+    .default_waveform = &epdiy_ED047TC2,
+    .display_type = DISPLAY_TYPE_GENERIC,
+};
